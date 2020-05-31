@@ -203,6 +203,7 @@ export default {
   width: 20px;
   height: 20px;
   text-align: center;
+  line-height: 24px;
 }
 .json-view .first-line,
 .json-view .last-line {
