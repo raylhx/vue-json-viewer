@@ -1,0 +1,24 @@
+{
+  "name": "vue-json-viewer",
+  "version": "1.0.0",
+  "description": "show json data with VSCode style, use Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raylhx/vue-json-viewer.git"
+  },
+  "keywords": [
+    "vue",
+    "json",
+    "vscode"
+  ],
+  "author": "ray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raylhx/vue-json-viewer/issues"
+  },
+  "homepage": "https://github.com/raylhx/vue-json-viewer#readme"
+}
