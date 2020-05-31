@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <div class="main-container">
+      <json-view :jsonData="testData"></json-view>
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import JsonView from './components/vue-json-view'
+import { mock } from './mock/test'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    JsonView,
+  },
+  data () {
+    return {
+      testData: mock,
+    }
+  },
+
+  mounted () {
+    console.log('test', this.testData)
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import "./css/reset.css";
+.app {
+  padding: 50px;
+}
+.main-container {
+  width: 900px;
 }
 </style>
